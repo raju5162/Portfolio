@@ -12,18 +12,16 @@ const About = () => {
           <div className="w-20 h-1 bg-[#10b981] mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-5xl mx-auto">
           {/* Main About Text */}
-          <div className="md:col-span-2">
-            <Card className="bg-[#1a1a1b] border-[#404040] p-8 hover:border-[#10b981] transition-all duration-300">
-              <p className="text-[#a3a3a3] text-lg leading-relaxed">
-                {about.summary}
-              </p>
-            </Card>
-          </div>
+          <Card className="bg-[#1a1a1b] border-[#404040] p-8 hover:border-[#10b981] transition-all duration-300 mb-8">
+            <p className="text-[#a3a3a3] text-lg leading-relaxed">
+              {about.summary}
+            </p>
+          </Card>
 
           {/* Highlights */}
-          <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {about.highlights.map((highlight, index) => (
               <Card
                 key={index}

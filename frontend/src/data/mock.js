@@ -14,8 +14,6 @@ export const personalInfo = {
 export const about = {
   summary: "Passionate Computer Science student at Lovely Professional University with a strong foundation in programming, data structures, and data analysis. Experienced in building data-driven solutions using Python, C++, and modern analytics tools. Constantly learning and applying problem-solving skills to real-world challenges.",
   highlights: [
-    { label: "CGPA", value: "6.93" },
-    { label: "Projects", value: "2+" },
     { label: "Certifications", value: "4+" },
     { label: "HackerRank", value: "3★" }
   ]
