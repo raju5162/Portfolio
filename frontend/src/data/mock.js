@@ -8,7 +8,8 @@ export const personalInfo = {
   location: "Phagwara, Punjab, India",
   linkedin: "linkedin.com/in/rajuksingh5162",
   github: "github.com/raju5162",
-  resumeLink: "#"
+  resumeLink: "#",
+  profilePhoto: "https://customer-assets.emergentagent.com/job_portfolio-gen-31/artifacts/d0waedch_WhatsApp%20Image%202026-03-24%20at%2011.33.02%20PM.jpeg"
 };
 
 export const about = {
