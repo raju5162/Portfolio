@@ -15,9 +15,11 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main About Text */}
           <Card className="bg-[#1a1a1b] border-[#404040] p-8 hover:border-[#10b981] transition-all duration-300 mb-8">
-            <p className="text-[#a3a3a3] text-lg leading-relaxed">
-              {about.summary}
-            </p>
+            <div className="text-[#a3a3a3] text-lg leading-relaxed space-y-4">
+              {about.summary.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </Card>
 
           {/* Highlights */}

@@ -12,7 +12,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  summary: "Passionate Computer Science student at Lovely Professional University with a strong foundation in programming, data structures, and data analysis. Experienced in building data-driven solutions using Python, C++, and modern analytics tools. Constantly learning and applying problem-solving skills to real-world challenges.",
+  summary: "Passionate Computer Science student at Lovely Professional University with a strong foundation in programming, data structures, and data analysis. Experienced in building data-driven solutions using Python, C++, and modern analytics tools. Constantly learning and applying problem-solving skills to real-world challenges.\n\nCurrently diving deep into Data Science, exploring machine learning algorithms, statistical analysis, and predictive modeling. Eager to leverage data to uncover insights and drive informed decision-making in real-world applications.",
   highlights: [
     { label: "Certifications", value: "4+" }
   ]
