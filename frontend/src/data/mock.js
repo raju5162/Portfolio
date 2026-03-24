@@ -33,7 +33,7 @@ export const projects = [
     date: "Apr 2025",
     description: "Built an interactive Excel dashboard to analyze emergency room performance and patient metrics. Visualized patient metrics including Total Patients, Wait Time, Admission Status, Age & Gender, and Referrals using Pivot Tables, Charts & Slicers.",
     technologies: ["Excel", "Pivot Tables", "Data Visualization", "Conditional Formatting"],
-    githubLink: "https://github.com/raju5162",
+    githubLink: "https://github.com/raju5162/Hospital-Emergency-Room-Dashboard",
     features: [
       "Real-time patient metrics visualization",
       "Automated insights using Excel formulas",
@@ -46,7 +46,7 @@ export const projects = [
     date: "Mar 2025",
     description: "Conducted comprehensive employee attrition analysis on HR dataset to identify key trends across age, income, satisfaction, and tenure. Used visual insights to highlight high-risk employee groups and support data-driven retention strategies.",
     technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "EDA"],
-    githubLink: "https://github.com/raju5162",
+    githubLink: "https://github.com/raju5162/Employee-Attrition-Analysis",
     features: [
       "Exploratory Data Analysis (EDA)",
       "Data cleaning and preprocessing",
@@ -80,7 +80,7 @@ export const education = [
     field: "Computer Science and Engineering",
     duration: "Aug 2023 - Present",
     location: "Phagwara, Punjab",
-    grade: "CGPA: 6.93"
+    grade: "CGPA: 7.3"
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export const certifications = [
     name: "Cloud Computing",
     issuer: "NPTEL",
     date: "Jul 2025 - Oct 2025",
-    status: "In Progress"
+    status: "Completed"
   },
   {
     id: 2,
@@ -130,20 +130,5 @@ export const certifications = [
     issuer: "Coursera",
     date: "Aug 2024 - Sep 2024",
     status: "Completed"
-  }
-];
-
-export const achievements = [
-  {
-    id: 1,
-    title: "3-Star in C++ on HackerRank",
-    platform: "HackerRank",
-    icon: "trophy"
-  },
-  {
-    id: 2,
-    title: "3-Star in Python on HackerRank",
-    platform: "HackerRank",
-    icon: "trophy"
   }
 ];
