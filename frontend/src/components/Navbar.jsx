@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from './ui/button';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -34,15 +33,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0a0a0b]/95 backdrop-blur-sm border-b border-[#404040]' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+        isScrolled ? 'bg-[#0a0a0b]/98 backdrop-blur-sm shadow-lg border-b border-[#262626]' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#home" className="text-xl font-bold text-[#10b981] hover:text-[#059669] transition-colors">
-            RK
+          <a href="#home" className="text-xl font-bold text-[#f5f5f5]">
+            Raju Kumar
           </a>
 
           {/* Desktop Navigation */}
@@ -52,23 +51,16 @@ const Navbar = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="text-[#a3a3a3] hover:text-[#f5f5f5] transition-colors text-sm font-medium"
+                className="text-[#a3a3a3] hover:text-[#10b981] transition-colors text-sm"
               >
                 {item.label}
               </a>
             ))}
-            <Button
-              size="sm"
-              className="bg-[#10b981] hover:bg-[#059669] text-white transition-colors"
-              onClick={(e) => scrollToSection(e, '#contact')}
-            >
-              Get In Touch
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-[#f5f5f5] hover:text-[#10b981] transition-colors"
+            className="md:hidden text-[#f5f5f5]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[#1a1a1b] border-t border-[#404040]">
+        <div className="md:hidden bg-[#1a1a1b] border-t border-[#262626]">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <a
@@ -90,12 +82,6 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button
-              className="w-full bg-[#10b981] hover:bg-[#059669] text-white transition-colors"
-              onClick={(e) => scrollToSection(e, '#contact')}
-            >
-              Get In Touch
-            </Button>
           </div>
         </div>
       )}
